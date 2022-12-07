@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Aug 13 14:21:54 2020
-@author: Robinson Montes
-"""
+""" Fabfile to generates a .tgz archive from the contents of web_static """
 from fabric.api import local, env
 from datetime import datetime
 
