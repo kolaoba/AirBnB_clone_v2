@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Fabfile to distribute an archive to a web server
+""" Fabfile to distribute an archive to a web server """
 from fabric.api import local, env
 from datetime import datetime
 
