@@ -48,7 +48,7 @@ class Place(BaseModel, Base):
     def amenities(self):
         """Getter attribute that returns the list of Amenity instances based on
         the attribute amenity_ids that contains all Amenity.id linked to the
-        Place
+        Place.
         """
         from models import storage
         my_list = []
@@ -61,7 +61,7 @@ class Place(BaseModel, Base):
     @amenities.setter
     def amenities(self, obj):
         """Setter attribute that handles append method for adding an Amenity.id
-        to the attribute amenity_ids
+        to the attribute amenity_ids.
         """
         if isinstance(obj, 'Amenity'):
             self.amenity_id.append(obj.id)
