@@ -18,8 +18,8 @@ def hbnb():
 
 @app.route('/c/<text>', strict_slashes=False)
 def c_route(text):
-	"""print C + <name> with underscore"""
-	return("C {}".format(text.replace("_", " ")))
+    """print C + <name> with underscore"""
+    return ("C {}".format(text.replace("_", " ")))
 
 
 if __name__ == '__main__':
